@@ -1,4 +1,76 @@
 :root {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: black;
+}
+
+
+
+#navbar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-style: solid;
+  border-color: red;
+  background-color: white;
+
+}
+
+.logo {
+  height: 3rem;
+}
+
+.homepage-image {
+  height: 50rem;
+}
+
+#navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding-right: 3rem;
+}
+
+#navbar-links a {
+  text-decoration: none;
+}
+
+#navbar-links a:hover {
+  color: var(--accent-color);
+}
+
+#navbar-links a:visited {
+  color: black
+}
+
+#navbar-links a:active {
+  color: var(--accent-color);
+  /* Sets the color when the link is clicked */
+}
+
+
+.main-content {
+  padding: 4rem;
+  margin-top: 8rem;
+}
+
+body {
+  margin-top: 15rem;
+}
+
+
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +137,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

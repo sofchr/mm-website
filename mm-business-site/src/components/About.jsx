@@ -1,7 +1,11 @@
 import React from "react";
 
 function About() {
-  return <p>About Marcelo</p>;
+  return (
+    <>
+      <p>Services: Hanging Paintings Mounting Art Stabilizing Sculptures</p>
+    </>
+  );
 }
 
 export default About;
