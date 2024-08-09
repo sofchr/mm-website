@@ -43,9 +43,32 @@
   text-decoration: none;
 }
 
-#navbar-links a:hover {
-  color: var(--accent-color);
+
+a {
+  color: #18272F;
+  position: relative;
+  text-decoration: none;
 }
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .4s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 
 #navbar-links a:visited {
   color: black
@@ -54,6 +77,10 @@
 #navbar-links a:active {
   color: var(--accent-color);
   /* Sets the color when the link is clicked */
+}
+
+#navbar-links a:hover {
+  text-decoration: underline;
 }
 
 
@@ -66,8 +93,11 @@ body {
   margin-top: 15rem;
 }
 
-
-
+.homepage-text {
+  position: relative;
+  top: 20rem;
+  color: whitesmoke;
+}
 
 
 /* :root {
